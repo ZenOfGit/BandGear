@@ -1,0 +1,23 @@
+﻿
+@model BandGear.Models.Guitar
+
+
+
+<form asp-action="Create">
+    <div class="form-group">
+        <input name="GuitarName" />
+        <input type="submit" value="Add Guitar"  />
+    </div>
+</form>
+
+<h2>Guitars:</h2>
+
+<div>
+    <ul>
+        <li>
+        <label>
+            @Model.Name
+        </label>
+        </li>
+    </ul>
+</div>
